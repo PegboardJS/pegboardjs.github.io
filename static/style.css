@@ -1,0 +1,78 @@
+/* TODO: magic JS props / non-dark themes? */
+:root {
+
+    --theme-page-heading-font-family: Courier, monospace;
+    --theme-page-text-font-family:    Courier, monospace;
+
+    --theme-page-bg:   #111;
+    --theme-page-text: #ccc;
+    --theme-page-text-size: 1.1em;
+
+    --theme-clickable-idle: #777;
+    --theme-clickable-base: #ccc;
+    --theme-clickable-hover: #fff;
+
+    --theme-spacing-one-unit: 1em;
+}
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-family: var(--theme-page-text-font-family);
+}
+
+p, li {
+    font-size: var(--theme-page-text-size);
+}
+
+body {
+    font-family: var(--theme-text-font-family);
+    padding: var(--theme-spacing-one-unit);
+    background: var(--theme-page-bg);
+
+    min-width: 100vw;
+    min-height: 100vh;
+    box-sizing: border-box; padding: 0.5em;
+}
+
+body > * {
+
+    text-align: center;
+    width: 100%;
+    margin-bottom: var(--theme-spacing-one-unit);
+}
+
+body > #footer {
+    /* Centered and small */
+    height: 1em;
+    font-size: 0.75em;
+
+    /* Try to stick it to the bottom? */
+    margin-bottom: 0px;
+    margin-top: auto;
+
+}
+
+h1, h2, h3, h3, h5 {
+    font-family: var(--theme-page-heading-font-family);
+}
+
+/* Headings get magic color by default */
+h1 {
+    color: var(--theme-clickable-base);
+}
+p, li, h2, h3, h4, h5 {
+    color: var(--theme-page-text);
+}
+
+a         { font-weight: bold;                   }
+a, a:link { color: var(--theme-clickable-base);  }
+a:hover   { color: var(--theme-clickable-hover); }
+a:visited { color: var(--theme-clickable-idle);  }
+
+
+ul, ol  { padding-left: 1em; }
+ul > li { list-style-type: disc; }
+ol > li { list-style-type: decimal; }
+
