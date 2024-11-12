@@ -43,6 +43,26 @@ body > * {
     margin-bottom: var(--theme-spacing-one-unit);
 }
 
+/* Header HTML */
+#header > *,
+#header {
+    display: inline-block;
+    vertical-align: middle;
+}
+#header > h1 {
+    /* Temp color until we work out whatever else we're doing for the theme */
+    color: #fff; /* var(--theme-clickable-base); */
+    size: 2em;
+    /* Get the text to align with the logo */
+    transform: translate(0, 0.025em);
+}
+
+#header > img {
+    height: 2em;
+    width: auto;
+    display: inline-block;
+}
+
 body > #footer {
     /* Centered and small */
     height: 1em;
@@ -58,10 +78,6 @@ h1, h2, h3, h3, h5 {
     font-family: var(--theme-page-heading-font-family);
 }
 
-/* Headings get magic color by default */
-h1 {
-    color: var(--theme-clickable-base);
-}
 p, li, h2, h3, h4, h5 {
     color: var(--theme-page-text);
 }
