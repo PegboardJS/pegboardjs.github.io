@@ -1,26 +1,73 @@
 <html>
     <head>
     <title>PegboardJS</title>
-    <link rel="stylesheet" href="./style.css"></link>
+    <link rel="stylesheet" href="./style.css"/>
+    <link rel="icon" href="./logo-big-temp.png" type="image/png"/>
     </head>
     <body>
         <div id="header">
-            <img src="logo-big-temp.png" />
+            <img src="./logo-big-temp.png" alt="PegboardJS Logo" />
             <h1>PegboardJS</h1>
         </div>
         <div id="content">
-            <p>
-                See <a href="https://github.com/PegboardJS" target="_blank">PegboardJS</a> on GitHub.
-            </p>
+            <h2>What is it?</h2>
+            <p><b>TL;DR:</b> A minimal framework for sharable prototyping.</p>
+
+            <p>It's intended to help you build sharable prototypes for the following:</p>
+            <ul>
+                <li>Programming languages and syntax</li>
+                <li>Simple developer utilities</li>
+                <li>Text-based games</li>
+            </ul>
+
+            <h2>How does it work?</h2>
+            <p><b>TL;DR:</b> Add a CSS file and a JS file to your HTML.</p>
+
+            <p>The default behavior is to look for any HTML elements with a <code>data-grid</code>
+            attribute. You'll need the CSS file to define the layout structure, but you can override
+            the defaults if needed.</p>
+
+            <h2>How much does it cost?</h2>
+            <h3>Zero</h3>
+            <p>It's free, but the creators do ask that you make something cool with it.</p>
+            <h3>MIT / Public Domain</h3>
+            <p>The starter templates will likely be public domain, but the core library code
+            uses the <a href="https://opensource.org/license/mit" target="_blank">MIT License</a>.<p>
+            <p>For source code, please see the <a href="https://github.com/PegboardJS" target="_blank">PegboardJS organization on GitHub</a>.</p>
             <br/>
+
+            <h2>What's the catch?</h2>
             <p>
-                This is a repo build / pages config test.
-                <a href="https://www.lipsum.com/" target="_blank" >Ipsum lorem</a> and all that.
+                The benefits and drawbacks are similar to physical
+                <a href="https://en.wikipedia.org/wiki/Perforated_hardboard" target="_blank">pegboard</a>:
             </p>
-            <p>(Actual content TBD)</p>
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Pros</th>
+                        <th>Cons</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>Fast initial setup</li>
+                                <li>Easy customization</li>
+                                <li>Cheap ($0 and low resource usage)</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Restricted to grid placement</li>
+                                <li>No animation</li>
+                                <li>No frills</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
         <div id="footer">
-            <p>Copyright 2024 <a href="https://github.com/pushfoo">pushfoo</a> and contributors
+            <p>Copyright 2024 <a href="https://github.com/pushfoo" target="_blank" >pushfoo</a> and contributors</p>
         </div>
     </body>
 </html>
